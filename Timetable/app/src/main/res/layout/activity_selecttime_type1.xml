@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Dialog.selecttime_type1">
+
+  <TextView
+      android:id="@+id/tv_time"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="00 : 00"
+      android:textSize="70dp"
+      android:textAlignment="center"/>
+
+  <TimePicker
+      android:id="@+id/simpleTimePicker1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:timePickerMode="spinner" />
+</LinearLayout>

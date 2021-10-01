@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".FirstFragment">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/topic"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:hint="Chủ đề:"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_time"
+            android:textSize="18dp"
+            android:text="Thời gian:"/>
+
+        <Spinner
+            android:id="@+id/spn_category"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bgr_time"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="5dp"
+            android:text="25/11/2002"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_time_perform"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/time_perform"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_time_perform"
+            android:text="Ngày thực hiện:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bgr_time"
+            android:drawableRight="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="5dp"
+            android:text="25/11/2002"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_topic_color"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/topic_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_topic_color"
+            android:text="Màu chủ đề:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_topic_color"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bgr_topic_color"
+            android:textSize="18dp" />
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/profile_image6"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="#E3592E" />-->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:id="@+id/titleinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#3000B0FF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Các Mục Tiêu"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptioninput"
+            android:hint="Decription"
+            android:background="#3000B0FF"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:lines="10"
+            android:gravity="top"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="create"
+            android:background="@drawable/bgr_create"
+            />
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--       android:layout_margin="10dp"-->
+<!--       android:gravity="center"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:orientation="horizontal">-->
+<!--       <Button-->
+<!--           android:layout_weight="1"-->
+<!--           android:id="@+id/btnTime"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="Time"/>-->
+<!--       <Button-->
+<!--           android:layout_marginLeft="10dp"-->
+<!--           android:layout_marginRight="10dp"-->
+<!--           android:layout_weight="1"-->
+<!--           android:id="@+id/btn_type1"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="type 1"/>-->
+<!--       <Button-->
+<!--           android:layout_weight="1"-->
+<!--           android:id="@+id/btn_type2"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="type 2"/>-->
+<!--   </LinearLayout>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txt_currentDate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="30sp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txt_currentTime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="30sp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txt_today"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="30sp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txt_tomorrow"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="30sp"/>-->
+<!--    <ListView-->
+<!--        android:id="@+id/lv_lich"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

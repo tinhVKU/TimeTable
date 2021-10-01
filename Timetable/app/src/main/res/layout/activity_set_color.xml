@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".Dialog.SetColor">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@color/red" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image2"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#F17A3B"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image3"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@color/yellow" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image4"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#2979FF" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image5"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#6BCC1A" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image6"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#00E5FF" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image7"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#D500F9" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image8"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#7C7676" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image9"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="#1DE9B6" />
+    </LinearLayout>
+
+</LinearLayout>
